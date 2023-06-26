@@ -3,7 +3,7 @@ const app = express();
 const fetch = require('cross-fetch');
 const fs = require('fs');
 
-fetch("https://raw.githubusercontent.com/shaunakg/notion-reading-list/master/modules.js").then(r => r.text()).then(r => {
+fetch("https://raw.githubusercontent.com/istitul/notion-books-metadata/master/modules.js").then(r => r.text()).then(r => {
     // Write to modules.js
     fs.writeFileSync("modules.js", r);
     console.log("modules.js written");
